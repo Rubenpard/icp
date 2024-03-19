@@ -1,0 +1,56 @@
+
+.card{
+    width: 296px;
+    height: 390px;
+    background-color: cadetblue;
+    border-radius: 20px;
+}
+
+.imageCards{
+    width: 296px;
+    height: 390px;
+    border-radius: 10px;
+}
+
+.containerValoracion{
+    width: 296px;
+    height: 23px;
+    gap: 4px;
+    display: flex;
+    span{
+        width: 28px;
+        height: 23px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23.44px;
+        color: #ffffff;
+    }
+}
+
+.star{
+    width: 20px;
+    height: 20px;
+    top: 1.25px;
+    left: 1.25px;
+}
+
+.tituloPelicula{
+    width: 296px;
+    height: 23px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    size: 20px;
+    line-height: 23.44px;
+    color: #ffffff;
+}
+
+.datosPelicula{
+    font-family: "Roboto", sans-serif;
+    font-weight: 800px;
+    font-size: 20px;
+    line-height: 23.44px;
+    color: #F8F8F8;
+    width: 296px;
+    height: 24px;
+}

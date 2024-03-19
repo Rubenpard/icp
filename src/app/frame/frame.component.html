@@ -1,0 +1,13 @@
+<div class="main">
+    <img class="banner" src="../assets/images/banner.jpg" alt="Imagen User">
+    <div class="contenedorGeneral">
+    <div class="titleCard">
+        <p>Selecciona una película</p>
+    </div>
+    <div class="cards">
+    <div *ngFor="let dato of datos">
+        <app-card [imagen]="dato.src" [title]="dato.name" [year]="dato.year" [duracion]="dato.duracion" [description]="dato.texto"></app-card>
+      </div>
+    </div>
+</div>
+</div>

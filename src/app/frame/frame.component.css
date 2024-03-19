@@ -1,0 +1,36 @@
+.main{
+    width: 1920px;
+    height: 1215px;
+    display: grid;
+    gap: 48px;
+}
+
+.banner{
+    width: 100%;
+}
+
+.contenedorGeneral{
+    display: grid;
+    gap: 24px;
+    width: 1576px;
+    height: 537px;
+    margin: 0px auto;
+}
+
+.titleCard{
+    width: 1576px;
+    height: 29px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28.13px;
+    color: #FFFFFF;
+}
+
+.cards{
+    width: 1576px;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
