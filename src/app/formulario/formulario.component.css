@@ -1,0 +1,54 @@
+.main{
+    width: 1920px;
+    height: 1334px;
+    background-color: rgb( 34, 34, 34, 0.95);
+    font-family: "Roboto", sans-serif;
+    color: white;
+    position: absolute;
+    top: 73px;
+    left: 0px;    
+}
+
+.form{
+    width: 936px;
+    height: 433px;
+    border-radius: 10px;
+    padding: 24px;
+    display: grid;
+    gap: 24px;
+    background-color: #080808;
+    margin: 200px auto;
+}
+
+.form__header{
+    width: 888px;
+    height: 69px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size:20px;
+    Line-height: 20px;
+
+    h2{
+        font-weight: 600;
+        size: 24px;
+        line-height: 28.13px;
+    }
+}
+
+.form__modal{
+    height: 888px;
+    height: 292px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 24px; 
+}
+
+.form__modal-input{
+    width: 432px;
+    height: 40px;
+    padding: 4px, 8px, 4px, 8px;
+    border-radius: 4px;
+    border: 1px solid #FFFFFF;
+
+}

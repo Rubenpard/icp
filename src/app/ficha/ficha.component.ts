@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { Tarjeta } from '../models/modelo.ficha';
+import { FormularioComponent } from '../formulario/formulario.component';
 
 @Component({
   selector: 'app-ficha',
   standalone: true,
-  imports: [],
+  imports: [FormularioComponent],
   templateUrl: './ficha.component.html',
   styleUrl: './ficha.component.css'
 })

@@ -8,7 +8,10 @@ export const DataService: Tarjeta[]=[
       name:'El Padrino',
       year: '1972',
       duracion:'175',
-      texto:'Html5 ameeeeizing',
+      texto:'Drama biográfico de corte histórico basado en American Prometheus, la biografía escrita por Kai Bird y Martin J. Sherwin en torno a la figura del científico J. Robert Oppenheimer y su rol en la creación y desarrollo de la bomba atómica. \n  16 de julio de 1945, en el desierto de Nuevo México se detona en secreto la primera bomba atómica.\
+      En tiempos de guerra, el brillante físico estadounidense Julius Robert Oppenheimer (Cillian Murphy), al frente del proyecto Manhattan, lidera los ensayos nucleares para construir la bomba atómica para su país.Impactado por su poder destructivo, Oppenheimer se cuestiona las consecuencias morales de su creación. \
+      Desde entonces y durante el resto de su vida, se opondría firmemente a la guerra nuclear y a la todavía más destructiva bomba de hidrógeno. \
+      Su vida daría así un profundo vuelco, pasando de tener un papel fundamental en el mapa político de la Guerra Fría a ser acusado de comunista en la era McCarthy. Cuestionando su lealtad, Oppenheimer fue tachando de espía de la Unión Soviética y obligado a dimitir de cualquier función pública.',
     },
 
     {

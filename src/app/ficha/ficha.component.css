@@ -1,18 +1,20 @@
 .main{
     width: 1920px;
     height: 1334px;
+    position: absolute;
+    top: 73px;
+    left: 0px;
     color: white;
     background-color: #222;
+    font-family: "Roboto", sans-serif;
 }
 
 .ficha{
     width: 1576px;
     height: 831.49px;
-    top: 97px;
-    left: 172px;
     display: grid;
     gap: 24px;
-    margin: 0px auto;
+    margin: 200px auto;
 }
 
 .rastro{
@@ -32,4 +34,57 @@
     height: 709.49px;
     display: flex;
     gap: 183px;
+    top: 97px;
+    left: 172px;
+}
+
+.imageCards{
+    width: 455px;
+    height: 599.49px;
+    gap: 24px;
+    border-radius: 15.37px;
+}
+
+.valoracion{
+width: 455px;
+height: 26px;
+gap: 4px;
+}
+
+.detalle{
+width: 455px;
+height: 60px;
+gap: 24px;
+font-weight: 600;
+font-size: 22px;
+Line-height: 25.78px
+}
+
+.datosPelicula{
+font-weight: 400;
+font-size: 22px;
+Line-height: 25.78px;
+}
+
+.sipnosis{
+font-weight: 600;
+font-size: 24px;
+Line-height: 28.13px;
+
+p{
+font-weight: 600;
+font-size: 15px;
+Line-height: 28.13px; 
+}
+
+}
+
+.valorar{
+width: 135px;
+height: 44px;
+border-radius: 10px;
+Padding: 10px;
+Gap: 10px; 
+background-color: #69C3D9; 
+float: right;
 }

@@ -4,17 +4,29 @@
         Peliculas > valoraciones
     </div>
     <div class="contentFicha">
-        <div> <img class="imageCards" src="{{tarjeta.src}}" alt="SVG Search">
+        <div> 
+            <img class="imageCards" src="{{tarjeta.src}}" alt="SVG Search">
             <div class="containerValoracion">
-                <span>8,9</span><img class="star" src="assets/icons/star.svg" alt="SVG Search">
+                <span>8,9</span>★
             </div>
-            <div class="tituloPelicula">
+           <div class="detalle"> 
+            <div>
                 <p>{{tarjeta.name}}</p>
             </div>
             <div class="datosPelicula">
-                m
+               {{tarjeta.year}}          {{tarjeta.duracion}} m
             </div>
         </div>
+        </div>
+        <div class="sipnosis">
+        SINOPSIS
+        <p>
+        {{tarjeta.texto}}    
+        </p>
+        </div>
     </div>
+    <button class="valorar">VALORAR</button>
 </div>
 </div>
+
+<app-formulario></app-formulario>
