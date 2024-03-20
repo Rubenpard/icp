@@ -1,26 +1,29 @@
-import { Component, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Tarjeta } from '../models/modelo.ficha';
+import { DataService } from '../data/data.Service';
+import { CommonModule } from '@angular/common';
+import { FichaComponent } from '../ficha/ficha.component';
 
 @Component({
   selector: 'app-card',
   standalone: true,
-  imports: [],
+  imports: [CommonModule, FichaComponent],
   templateUrl: './card.component.html',
   styleUrl: './card.component.css'
 })
-export class CardComponent {
+export class CardComponent implements OnInit {
+  lista: Tarjeta[]=DataService;
+  tarjetaSelect : Tarjeta;
 
-  @Input() imagen: string;
-  @Input() title: string;
-  @Input() description: string;
-  @Input() year: string;
-  @Input() duracion: string;
-
-  constructor() {
-    this.imagen = '';
-    this.title = '';
-    this.description = '';
-    this.year = '';
-    this.duracion = '';
+  constructor(){
+    console.log(this.lista);
   }
+  ngOnInit(): void {
+  }
+
+    elegirPelicula(tarjeta: Tarjeta):void{
+      this.tarjetaSelect = tarjeta;
+      console.log(tarjeta);
+    }
 
 }

@@ -1,15 +1,20 @@
 
-    <div class="card">
-        <img class="imageCards" src="{{imagen}}" alt="SVG Search">
+    <div class="cards">
+        <div *ngFor="let d of lista; let i=index" class="card" (click)="elegirPelicula(d)">
+        <img class="imageCards" src="{{d.src}}" alt="SVG Search">
         <div class="containerValoracion">
             <span>8,9</span><img class="star" src="assets/icons/star.svg" alt="SVG Search">
         </div>
         <div class="tituloPelicula">
-            <h1>{{title}}</h1>
+            <p>{{d.name}}</p>
         </div>
         <div class="datosPelicula">
-            {{year}}   {{duracion}}m
+            <p>{{d.year}}  {{d.duracion}}m</p>
         </div>
     </div>
+   
+</div>
+<app-ficha [tarjeta]="tarjetaSelect" *ngIf="tarjetaSelect"></app-ficha>
+
 
 

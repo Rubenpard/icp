@@ -1,9 +1,17 @@
 
+.cards{
+    width: 1576px;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .card{
     width: 296px;
     height: 390px;
-    background-color: cadetblue;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .imageCards{

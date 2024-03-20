@@ -27,10 +27,3 @@
     color: #FFFFFF;
 }
 
-.cards{
-    width: 1576px;
-    display: flex;
-    gap: 24px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
