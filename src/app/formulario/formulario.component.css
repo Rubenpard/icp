@@ -9,6 +9,10 @@
     left: 0px;    
 }
 
+.cerrar{
+    cursor: pointer;
+}
+
 .form{
     width: 936px;
     height: 433px;

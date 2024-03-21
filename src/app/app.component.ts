@@ -4,6 +4,7 @@ import { CardComponent } from './card/card.component';
 import { HeaderComponent } from './header/header.component';
 import { FrameComponent } from './frame/frame.component';
 import { FormularioComponent } from './formulario/formulario.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',

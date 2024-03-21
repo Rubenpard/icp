@@ -3,7 +3,7 @@
         <div *ngFor="let d of lista; let i=index" class="card" (click)="elegirPelicula(d)">
         <img class="imageCards" src="{{d.src}}" alt="SVG Search">
         <div class="containerValoracion">
-            <span>8,9</span><img class="star" src="assets/icons/star.svg" alt="SVG Search">
+            <p>Has seleccionado: {{ rating }} estrella(s).</p><span>8,9</span><img class="star" src="assets/icons/star.svg" alt="SVG Search">
         </div>
         <div class="tituloPelicula">
             <p>{{d.name}}</p>

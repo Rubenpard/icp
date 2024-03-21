@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class FormularioComponent {
   rating: number = 0;
+
   onRatingChange(): void {
     console.log('Valoración seleccionada:', this.rating);
   }

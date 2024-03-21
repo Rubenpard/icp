@@ -3,6 +3,7 @@ import { Tarjeta } from '../models/modelo.ficha';
 import { DataService } from '../data/data.Service';
 import { CommonModule } from '@angular/common';
 import { FichaComponent } from '../ficha/ficha.component';
+import { FormularioComponent } from '../formulario/formulario.component';
 
 @Component({
   selector: 'app-card',
@@ -14,6 +15,7 @@ import { FichaComponent } from '../ficha/ficha.component';
 export class CardComponent implements OnInit {
   lista: Tarjeta[]=DataService;
   tarjetaSelect : Tarjeta;
+  rating: number = 0;
 
   constructor(){
     console.log(this.lista);
@@ -24,6 +26,10 @@ export class CardComponent implements OnInit {
     elegirPelicula(tarjeta: Tarjeta):void{
       this.tarjetaSelect = tarjeta;
       console.log(tarjeta);
+    }
+
+    onRatingChange(): void {
+      console.log('Valoración seleccionada:', this.rating);
     }
 
 }
