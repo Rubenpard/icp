@@ -42,7 +42,6 @@
 }
 
 .form__modal{
-    height: 888px;
     height: 292px;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -54,7 +53,7 @@
     }
 }
 
-.form__modal-input{
+.form__modal--input{
     width: 432px;
     height: 40px;
     padding: 4px, 8px, 4px, 8px;
@@ -63,11 +62,13 @@
 }
 
 .botonera{
-    display: flex;
+    width: ;
+    display: flex!important;
     gap: 16px;
-    justify-content: right;
     text-align: center;
     line-height: 2;
+    justify-content: right;
+    margin: 16px;
 
     .boton{
         cursor: pointer;

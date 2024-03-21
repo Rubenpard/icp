@@ -6,34 +6,33 @@
                 <img src="assets/icons/cerrar.svg" alt="SVG Cerrar">
             </a>
         </div>
-    <div class="form__modal">
-        <div>
-            <label  for="fname">First name:</label>
-            <input class="form__modal-input" type="text" id="fname" name="fname" value="">
-            <label for="lname">Last name:</label>
-            <input class="form__modal-input" type="text" id="lname" name="lname" value="">
-            <label for="rating">Valoración:</label>
-            <select class="form__modal-input" id="rating">
-                <option value="1">1 Estrella</option>
-                <option value="2">2 Estrellas</option>
-                <option value="3">3 Estrellas</option>
-                <option value="4">4 Estrellas</option>
-                <option value="5">5 Estrellas</option>
-            </select>
+        <form class="form__modal" [formGroup]='formulario'>
+            <div>
+                <label  for="fname">Nombre*</label>
+                <input class="form__modal--input" type="text" formControlName="nombre" value="">
+                <!-- <p *ngIf="formulario.get('nombre')?.errors?.['required']">Campo requerido<p> -->
+                <label for="lname">Segundo Apellido*</label>
+                <input class="form__modal--input" type="text" formControlName="apellido1" value="">
+                <label for="rating">Valoración*</label>
+                <select [(ngModel)]="validar.estado" class="form__modal--input" formControlName="valoracion">
+                    <option [value]="e" *ngFor="let e of estados">{{e}}</option>
+                </select>
         </div>
     <div>
-        <label for="fname">First name:</label>
-        <input class="form__modal-input" type="text" id="fname" name="fname" value="">
-        <label for="lname">Last name:</label>
-        <input class="form__modal-input" type="text" id="lname" name="lname" value="">
+        <label for="lname2">Primer apellido</label>
+        <input class="form__modal--input" type="text" formControlName="apellido2" value="">
+        <label for="email">Email</label>
+        <input class="form__modal--input" type="email" formControlName="correo" value="">
         <br/><br/><br/><br/>   
     </div>
-</div>
-<div class="botonera">
-    <a class="boton"  href="">
-    <div><img class="cerrar" src="assets/icons/cerrar.svg" alt="SVG Cerrar">Cancelar</div>
-</a>
-    <input class="boton submitBoton" type="submit" value="Submit" >
-    </div>
+    <div></div>
+    <div class="botonera">
+        <a class="boton"  href="">
+        <div><img class="cerrar" src="assets/icons/cerrar.svg" alt="SVG Cerrar">Cancelar</div>
+    </a>
+        <input class="boton submitBoton" type="submit" value="Submit" >
+        </div>
+    </form>
+
   </div> 
 </div>
