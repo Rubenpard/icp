@@ -5,6 +5,7 @@ export class Tarjeta {
     year: string;
     duracion:string;
     texto:string;
+    valoracion:string;
     static forEach: any;
     static array: any;
 }  

@@ -5,6 +5,7 @@
     gap: 24px;
     justify-content: space-between;
     flex-wrap: wrap;
+    font-family: "Roboto", sans-serif;
 }
 
 .card{
@@ -12,6 +13,8 @@
     height: 390px;
     border-radius: 20px;
     cursor: pointer;
+    display: grid;
+    gap: 8px;
 }
 
 .imageCards{
@@ -23,17 +26,13 @@
 .containerValoracion{
     width: 296px;
     height: 23px;
-    gap: 4px;
     display: flex;
-    span{
-        width: 28px;
-        height: 23px;
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 23.44px;
-        color: #ffffff;
-    }
+    gap: 4px;
+    color: #ffffff;
+    line-height: 23.44px;
+    font-weight: 400;
+    font-size: 20px;
+    justify-content: right;
 }
 
 .star{
@@ -46,19 +45,17 @@
 .tituloPelicula{
     width: 296px;
     height: 23px;
-    font-family: "Roboto", sans-serif;
     font-weight: 600;
-    size: 20px;
+    font-size: 20px;
     line-height: 23.44px;
     color: #ffffff;
 }
 
 .datosPelicula{
-    font-family: "Roboto", sans-serif;
-    font-weight: 800px;
+    width: 296px;
+    height: 24px;
+    font-weight: 400;
     font-size: 20px;
     line-height: 23.44px;
     color: #F8F8F8;
-    width: 296px;
-    height: 24px;
 }

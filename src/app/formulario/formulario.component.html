@@ -2,33 +2,38 @@
     <div class="form">
         <div class="form__header">
             <h2>Rellena el formulario</h2>
-            <a href="" class="cerrar"><h3>X</h3></a>
+            <a href="" class="cerrar">
+                <img src="assets/icons/cerrar.svg" alt="SVG Cerrar">
+            </a>
         </div>
-        <div class="form__modal">
-            <div>
-        <label  for="fname">First name:</label><br>
-        <input class="form__modal-input" type="text" id="fname" name="fname" value="John"><br>
-        <label for="lname">Last name:</label><br>
-        <input class="form__modal-input" type="text" id="lname" name="lname" value="Doe"><br><br>
-        
-    <label for="rating">Valoración:</label>
-    <select class="form__modal-input" id="rating" [(ngModel)]="rating" (change)="onRatingChange()">
-      <option value="1">1 Estrella</option>
-      <option value="2">2 Estrellas</option>
-      <option value="3">3 Estrellas</option>
-      <option value="4">4 Estrellas</option>
-      <option value="5">5 Estrellas</option>
-    </select>
-    <p>Has seleccionado: {{ rating }} estrella(s).</p>
+    <div class="form__modal">
+        <div>
+            <label  for="fname">First name:</label>
+            <input class="form__modal-input" type="text" id="fname" name="fname" value="">
+            <label for="lname">Last name:</label>
+            <input class="form__modal-input" type="text" id="lname" name="lname" value="">
+            <label for="rating">Valoración:</label>
+            <select class="form__modal-input" id="rating">
+                <option value="1">1 Estrella</option>
+                <option value="2">2 Estrellas</option>
+                <option value="3">3 Estrellas</option>
+                <option value="4">4 Estrellas</option>
+                <option value="5">5 Estrellas</option>
+            </select>
+        </div>
+    <div>
+        <label for="fname">First name:</label>
+        <input class="form__modal-input" type="text" id="fname" name="fname" value="">
+        <label for="lname">Last name:</label>
+        <input class="form__modal-input" type="text" id="lname" name="lname" value="">
+        <br/><br/><br/><br/>   
+    </div>
 </div>
-<div>
-    <label for="fname">First name:</label><br>
-    <input class="form__modal-input" type="text" id="fname" name="fname" value="John"><br>
-    <label for="lname">Last name:</label><br>
-    <input class="form__modal-input" type="text" id="lname" name="lname" value="Doe"><br><br>
-    <input type="submit" value="Submit">
-</div>
-</div>
-
+<div class="botonera">
+    <a class="boton"  href="">
+    <div><img class="cerrar" src="assets/icons/cerrar.svg" alt="SVG Cerrar">Cancelar</div>
+</a>
+    <input class="boton" type="submit" value="Submit">
+    </div>
   </div> 
 </div>

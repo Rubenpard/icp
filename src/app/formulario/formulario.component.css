@@ -11,11 +11,13 @@
 
 .cerrar{
     cursor: pointer;
+    width: 21px;
+    height: 21px;
+    justify-content: right;
 }
 
 .form{
     width: 936px;
-    height: 433px;
     border-radius: 10px;
     padding: 24px;
     display: grid;
@@ -25,7 +27,6 @@
 }
 
 .form__header{
-    width: 888px;
     height: 69px;
     display: flex;
     justify-content: space-between;
@@ -46,6 +47,11 @@
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 24px; 
+
+    div{
+        display: grid;
+        row-gap: 2px;
+    }
 }
 
 .form__modal-input{
@@ -54,5 +60,35 @@
     padding: 4px, 8px, 4px, 8px;
     border-radius: 4px;
     border: 1px solid #FFFFFF;
+}
 
+.botonera{
+    display: flex;
+    gap: 16px;
+    justify-content: right;
+    text-align: center;
+    line-height: 2;
+
+    .boton{
+        cursor: pointer;
+        width: 134px;
+        height: 44px;
+        border: 10px;
+        border-radius: 10px;
+        font-size: 22px;
+        font-weight: 600;
+        border: 1px solid #ffffff;
+    }
+
+    a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    div{
+        display: flex; 
+        gap:8px; 
+        align-items: center;
+        padding-left: 5px;
+    }
 }

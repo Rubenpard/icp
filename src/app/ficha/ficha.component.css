@@ -1,69 +1,86 @@
 .main{
-    width: 1920px;
-    height: 1334px;
-    position: absolute;
-    top: 73px;
-    left: 0px;
-    color: white;
-    background-color: #222;
-    font-family: "Roboto", sans-serif;
+width: 1920px;
+height: 1334px;
+position: absolute;
+top: 73px;
+left: 0px;
+color: white;
+background-color: #222;
+font-family: "Roboto", sans-serif;
 }
 
 .ficha{
-    width: 1576px;
-    height: 831.49px;
-    display: grid;
-    gap: 24px;
-    margin: 200px auto;
+width: 1576px;
+height: 831.49px;
+display: grid;
+gap: 24px;
+margin: 50px auto;
 }
 
 .rastro{
-    width: 1576px;
-    height: 30px;
-    gap: 24px;
+width: 1576px;
+height: 30px;
+display: flex;
+gap: 24px;
+color: #ffffff;
+    .grey{
+        color: #8A8888;
+    }
+    .blue{
+        color: #69C3D9;
+    }
 }
 
 .breadCrumb{
-    width: 776px;
-    height: 30px;
-    gap: 8px;
+width: 776px;
+height: 30px;
+gap: 8px;
 }
 
 .contentFicha{
-    width: 1576px;
-    height: 709.49px;
-    display: flex;
-    gap: 183px;
-    top: 97px;
-    left: 172px;
+width: 1576px;
+height: 709.49px;
+display: flex;
+gap: 183px;
+top: 97px;
+left: 172px;
 }
 
 .imageCards{
-    width: 455px;
-    height: 599.49px;
-    gap: 24px;
-    border-radius: 15.37px;
+width: 455px;
+height: 599.49px;
+gap: 24px;
+border-radius: 15.37px;
 }
 
 .valoracion{
 width: 455px;
 height: 26px;
+display: grid;
 gap: 4px;
+text-align: right;
 }
 
 .detalle{
 width: 455px;
 height: 60px;
-gap: 24px;
+display: grid;
 font-weight: 600;
 font-size: 22px;
-Line-height: 25.78px
+Line-height: 25.78px;
+font-weight: 400;
+    
+    .name{
+    font-weight: 600;
+    }
 }
 
 .datosPelicula{
 font-weight: 400;
 font-size: 22px;
 Line-height: 25.78px;
+display: flex;
+gap: 24px;
 }
 
 .sipnosis{
@@ -71,11 +88,11 @@ font-weight: 600;
 font-size: 24px;
 Line-height: 28.13px;
 
-p{
-font-weight: 600;
-font-size: 15px;
-Line-height: 28.13px; 
-}
+    p{
+    font-weight: 600;
+    font-size: 15px;
+    Line-height: 28.13px; 
+    }
 
 }
 
@@ -88,4 +105,34 @@ Gap: 10px;
 background-color: #69C3D9; 
 float: right;
 cursor: pointer;
+}
+
+.botonValorar{
+width: 135px;
+height: 44px;
+border-radius: 10px;
+font-weight: 600;
+display: flex;
+gap:10px;
+background-color: #69C3D9;
+color:#22262B;
+font-size: 20px;
+text-decoration: none;
+text-align: center;
+float: right;
+justify-content: center;
+align-items: center;
+padding: 10px;
+
+    .check{
+        width: 21px;
+        height: 15.49px;
+        top: 3.51px;
+        left: 1.5px;
+    }
+
+    p{
+    font-weight: 600;
+    line-height: 1.5px;
+    }
 }

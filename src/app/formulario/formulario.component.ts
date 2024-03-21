@@ -9,10 +9,5 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './formulario.component.css'
 })
 export class FormularioComponent {
-  rating: number = 0;
-
-  onRatingChange(): void {
-    console.log('Valoración seleccionada:', this.rating);
-  }
  
 }

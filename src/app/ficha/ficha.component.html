@@ -1,20 +1,19 @@
 <div class="main">
   <div class="ficha">
     <div class="rastro">
-        Peliculas > valoraciones
+        <span class="grey">Peliculas</span><span>></span><span class="blue">valoraciones</span>              
     </div>
     <div class="contentFicha">
         <div> 
             <img class="imageCards" src="{{tarjeta.src}}" alt="SVG Search">
-            <div class="containerValoracion">
-                <span>8,9</span>★
+            <div class="valoracion">
+                <p>{{tarjeta.valoracion}}</p>
             </div>
            <div class="detalle"> 
-            <div>
-                <p>{{tarjeta.name}}</p>
-            </div>
+            <div><p class="name">{{tarjeta.name}}</p></div>
             <div class="datosPelicula">
-               {{tarjeta.year}}          {{tarjeta.duracion}} m
+               <div>{{tarjeta.year}}</div>
+               <div>{{tarjeta.duracion}} m</div>
             </div>
         </div>
         </div>
@@ -25,6 +24,10 @@
         </p>
         </div>
     </div>
-    <a href="formulario">VALORAR</a>
+    <div>
+    <a class="botonValorar" href="formulario">
+        <img class="check" src="assets/icons/check.svg" alt="SVG Search"><p>Valorar</p>
+    </a>
+</div>
 </div>
 </div>

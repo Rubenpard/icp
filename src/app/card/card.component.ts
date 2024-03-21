@@ -18,18 +18,15 @@ export class CardComponent implements OnInit {
   rating: number = 0;
 
   constructor(){
-    console.log(this.lista);
   }
   ngOnInit(): void {
   }
 
     elegirPelicula(tarjeta: Tarjeta):void{
       this.tarjetaSelect = tarjeta;
-      console.log(tarjeta);
     }
 
     onRatingChange(): void {
-      console.log('Valoración seleccionada:', this.rating);
     }
 
 }
