@@ -91,4 +91,9 @@
         align-items: center;
         padding-left: 5px;
     }
+
+    .submitBoton{
+        background-color: #69C3D9;
+        border: none;
+    }
 }
