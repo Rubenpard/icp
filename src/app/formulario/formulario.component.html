@@ -15,7 +15,7 @@
                 <input class="form__modal--input" type="text" formControlName="apellido1" value="">
                 <label for="rating">Valoración*</label>
                 <select [(ngModel)]="validar.estado" class="form__modal--input" formControlName="valoracion">
-                    <option [value]="e" *ngFor="let e of estados">{{e}}</option>
+                    <option [ngValue]="e" *ngFor="let e of estados">{{e}}</option>
                 </select>
         </div>
     <div>

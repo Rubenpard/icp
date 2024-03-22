@@ -1,4 +1,5 @@
 
+import { Valoracion } from '../formulario/valoracion';
 import { Tarjeta } from '../models/modelo.ficha';
 
 export const DataService: Tarjeta[]=[
@@ -12,7 +13,7 @@ export const DataService: Tarjeta[]=[
       En tiempos de guerra, el brillante físico estadounidense Julius Robert Oppenheimer (Cillian Murphy), al frente del proyecto Manhattan, lidera los ensayos nucleares para construir la bomba atómica para su país.Impactado por su poder destructivo, Oppenheimer se cuestiona las consecuencias morales de su creación. \
       Desde entonces y durante el resto de su vida, se opondría firmemente a la guerra nuclear y a la todavía más destructiva bomba de hidrógeno. \
       Su vida daría así un profundo vuelco, pasando de tener un papel fundamental en el mapa político de la Guerra Fría a ser acusado de comunista en la era McCarthy. Cuestionando su lealtad, Oppenheimer fue tachando de espía de la Unión Soviética y obligado a dimitir de cualquier función pública.',
-      valoracion:'8,9★',
+      valoracion: new Valoracion ,
     },
 
     {
@@ -28,7 +29,7 @@ export const DataService: Tarjeta[]=[
       deberán hacer frente a las circunstancias de la única forma que saben. Cuando les pongan entre la \
       espada y la pared idearán un plan para escapar del peligro en una trepidante carrera por salvar \
       la vida y limpiar su reputación. Acción, persecuciones y un ritmo frenético en esta nueva entrega.',
-      valoracion:'8,9★',
+      valoracion: new Valoracion,
     },
     {
       id: 3,
@@ -48,7 +49,7 @@ export const DataService: Tarjeta[]=[
       fundamental en el mapa político de la Guerra Fría a ser acusado de comunista en la era McCarthy. \
       Cuestionando su lealtad, Oppenheimer fue tachando de espía de la Unión Soviética y obligado a \
       dimitir de cualquier función pública.',
-      valoracion:'8,9★',
+      valoracion: new Valoracion,
     },
     {
       id: 4,
@@ -67,7 +68,7 @@ export const DataService: Tarjeta[]=[
       (American Horror Story), Come, reza, ama es la adaptación de la obra homónima publicada \
       por la propia Elizabeth Gilbert. La película está protagonizada por Julia Roberts en el papel \
       protagonista, y Javier Bardem, Viola Davis y James Franco como co-protagonistas.',
-      valoracion:'8,9★',
+      valoracion: new Valoracion,
     }
     ,
     {
@@ -88,6 +89,6 @@ export const DataService: Tarjeta[]=[
       resentido, fraguará un plan para deshacerse de Buzz Lightyear, pero ése solo será el principio de \
       unas intensas aventuras en las que ambos juguetes, irónicamente, acabarán convirtiéndose en los \
       mejores amigos del mundo.',
-      valoracion:'8,9★',
+      valoracion: new Valoracion  ,
     }
   ];

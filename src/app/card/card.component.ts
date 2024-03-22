@@ -3,7 +3,6 @@ import { Tarjeta } from '../models/modelo.ficha';
 import { DataService } from '../data/data.Service';
 import { CommonModule } from '@angular/common';
 import { FichaComponent } from '../ficha/ficha.component';
-import { FormularioComponent } from '../formulario/formulario.component';
 import { Valoracion } from '../formulario/valoracion';
 
 @Component({
@@ -16,12 +15,13 @@ import { Valoracion } from '../formulario/valoracion';
 export class CardComponent implements OnInit {
   lista: Tarjeta[]=DataService;
   tarjetaSelect : Tarjeta;
-  rating: number = 0;
-  @Input() validar: Valoracion;
+  validar: Valoracion=new Valoracion();
+  estados: string[]=['1 estrella','2 estrella','3 estrella','4 estrella','5 estrella'];
 
   constructor(){
   }
   ngOnInit(): void {
+    this.validar.estado=this.estados[1];
   }
 
     elegirPelicula(tarjeta: Tarjeta):void{

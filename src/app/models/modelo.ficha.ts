@@ -1,3 +1,5 @@
+import { Valoracion } from "../formulario/valoracion";
+
 export class Tarjeta {
     id: number;
     src: string;
@@ -5,7 +7,7 @@ export class Tarjeta {
     year: string;
     duracion:string;
     texto:string;
-    valoracion:string;
+    valoracion: Valoracion;
     static forEach: any;
     static array: any;
 }  
