@@ -16,7 +16,7 @@ export class CardComponent implements OnInit {
   lista: Tarjeta[]=DataService;
   tarjetaSelect : Tarjeta;
   validar: Valoracion=new Valoracion();
-  estados: string[]=['1 estrella','2 estrella','3 estrella','4 estrella','5 estrella'];
+  estados: string[]=['1 estrella','2 estrellas','3 estrellas','4 estrellas','5 estrellas'];
 
   constructor(){
   }

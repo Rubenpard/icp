@@ -13,7 +13,7 @@ export class FormularioComponent {
 
   formulario: FormGroup;
   validar: Valoracion=new Valoracion();
-  estados: string[]=['1 estrella','2 estrella','3 estrella','4 estrella','5 estrella'];
+  estados: string[]=['1 estrella','2 estrellas','3 estrellas','4 estrellas','5 estrellas'];
 
   constructor(private form: FormBuilder){
     this.formulario = form.group ({
@@ -26,7 +26,6 @@ export class FormularioComponent {
   }
   ngOnInit(): void {
     console.log(this.validar);
-   // this.validar.estado=this.estados[1];
   }
  
 }
