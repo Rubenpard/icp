@@ -17,12 +17,12 @@ export const routes: Routes = [
 
 
 
-
-DataService.forEach(d => {
+//este es el arreglo que queria usar para la generacion de fichas
+/* DataService.forEach(d => {
     routes.push({
         path:d.name,
         component: FichaComponent ,
     })
-}); 
+});*/ 
 
 
